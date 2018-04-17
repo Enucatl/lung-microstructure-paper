@@ -1,0 +1,70 @@
+\section{Modelling the polychromatic dark-field signal}
+Previous works [Lynch, Gkoumas] have demonstrated quantitative estimation of
+the dark-field signal for a monochromatic source and monodisperse solutions
+of micrometer-sized spheres. In particular, the coefficient $\mu_B$, for a
+beam of wavelength $\lambda$ was estimated as:
+
+\begin{equation}
+\mu_B = \frac{3\pi}{\lambda^2}f |\Delta n|^2 d
+    \begin{cases}
+    D' & \text{if } D' \leqslant 1\\[2ex]
+    \\!\begin{align}
+    & D' - \sqrt{D'^2 - 1}\\
+    & (1 + D'^{-2}/2) \\
+    & + (D'^{-1} + D'^{-3} / 4) \\
+    & \log\left(\frac{D' + \sqrt{D'^2 - 1}}{D' - \sqrt{D'^2 - 1}}\right)
+    \end{align} & \text{otherwise.}
+    \end{cases}
+    \label{eqn:lynch}
+\end{equation}
+
+The autocorrelation length is $d = L\lambda / p$ with $L$ the sample to
+detector distance, $p$ and the period of $G_2$. $D'$ is a normalized
+particle diameter equal to $D/d$, where $D$ is the particle diameter. $f$ is
+the fraction of volume occupied by the scattering material and $n = 1 -
+\delta - i\beta$ is the complex refractive index.
+
+We rewrite this formula more concisely as
+
+\begin{equation}
+    \mu_B(\energy) = C |\Delta n(\energy)|^2 \energy u(\energy),
+    \label{eqn:lynchshort}
+\end{equation}
+where $\energy$ is the energy of the beam, $C = 3 fL / 4p$ is a constant depending only on the setup geometry and the volume fraction $f$ occupied by the spheres.
+
+
+In the case of a polychromatic source, we tested a model where different
+energies interact with the sample independently of each other, thus allowing
+an incoherent sum of the dark-field signals over the spectral weights
+$s(\energy)$:
+
+\begin{equation}
+    R = C \frac{\sum_\energy s(\energy)|\Delta n(\energy)|^2 \energy u(\energy)}{\sum_\energy s(\energy) \energy \beta}.
+    \label{eqn:lynchpolychromatic}
+\end{equation}
+
+This formula was first tested on monodisperse solution of silicon dioxide
+spheres with sizes ranging from 0.166 μm to 7.760 μm, with a volume fraction of 20\%
+in glycerine. This model yields a good agreement between the continuous line
+and the experimental data representing radiographies of the silicon dioxide
+sphere samples recorded on the laboratory source interferometer.
+
+[plot]
+
+In this work, we propose to model the lung sample as a solution of
+polydisperse spherical air bubbles embedded in tissue. The distribution of
+the sphere diameters is extracted from the microtomographic data, together
+with the fraction of the volume occupied by the tissue. The density of the
+tissue is also estimated from tomographic projections: the composition is
+taken from the ICRU-44 lung tissue tables, while the density is increased to
+1.6 g/cm$^3$ as to match the absorption values recorded on the tomographic
+projections. This results from the drying procedure for the fixation of
+the samples, leaving a denser material than in \emph{in vivo} conditions.
+
+The coefficient $\mu_B$ can then be expressed as a double summation over the spectrum
+$s(\energy)$ and over the distribution of sphere diameters $\rho(d)$:
+
+\begin{equation}
+    \mu_B = \sum_{d}\sum_{\energy}} \mu_B(r, E; n, f)\rho(d)s(\energy)
+    \label{eqn:totalsum}.
+\end{equation}

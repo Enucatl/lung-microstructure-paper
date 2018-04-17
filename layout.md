@@ -1,2 +1,4 @@
-untitled.html
-cp5irkvpu7.tex
+introduction.tex
+methods.tex
+model.tex
+results.tex
