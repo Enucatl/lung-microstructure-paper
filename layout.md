@@ -2,5 +2,5 @@ introduction.tex
 methods.tex
 model.tex
 figures/summary
-sto83n7glik.tex
+model2.tex
 results.tex
