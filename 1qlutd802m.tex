@@ -1,0 +1,15 @@
+For each pixel, the transmission image $A$ and the
+dark-field image $B$ are calculated. Both of these
+quantities are known to follow the Beer-Lambert law, with an exponential
+decay related to the thickness $t$ of the sample: $A = \exp(-\mu_A t)$, $B =
+\exp(-\mu_B t)$. Since the lung samples are irregular in shape, it is
+beneficial to examine the ratio of the logarithms $R$ in
+order to remove the local dependence on the thickness of the sample in the
+radiography:
+
+\begin{align*}
+    A &= \dfrac{a_{0,s}}{a_{0,f}}\\
+    B &= \dfrac{a_{1,s}}{a_{1,f}}\dfrac{a_{0,f}}{a_{0,s}}\\
+    R &= \dfrac{\log(B)}{\log(A)}.
+    \label{eqn:definitions}
+\end{align*}
