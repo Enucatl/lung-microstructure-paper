@@ -5,7 +5,7 @@ In order to preserve the delicate structure of the lungs, critical point
 drying is used in order to avoid the damage caused by evaporating the liquids
 from the sample in ordinary pressure conditions.
 
-[ETHICAL DETAILS? PREPARATION STEPS?]
+[ethical details? preparation steps?]
 
 \subsection{Image acquisition}
 The microtomography high-resolution 3D images were acquired at the X02DA
@@ -92,11 +92,18 @@ the parameters are changed when a sample is in the beam:
     \label{eqn:sample}
 \end{equation}
 
-For each pixel, the transmission image $A = a_{0,s} / a_{0,f}$ and the
-dark-field image $B = a_{1,s} / Aa_{1,f}$ are calculated. Both of these
+For each pixel, the transmission image $A$ and the
+dark-field image $Bj$ are calculated. Both of these
 quantities are known to follow the Beer-Lambert law, with an exponential
 decay related to the thickness $t$ of the sample: $A_\exp(-\mu_A t)$, $B =
 \exp(-\mu_B t)$. Since the lung samples are irregular in shape, it is
-beneficial to examine the ratio of the logarithms $R = \log(B) / \log(A)$ in
+beneficial to examine the ratio of the logarithms $R$ in
 order to remove the local dependence on the thickness of the sample in the
-radiography.
+radiography:
+
+\begin{align*}
+    A &= \dfrac{a_{0,s}}{a_{0,f}}\\
+    B &= \dfrac{a_{1,s}}{a_{1,f}}\dfrac{a_{0,f}}{a_{0,s}}\\
+    R &= \dfrac{\log(B)}{\log(A)}.
+    \label{eqn:definitions}
+\end{align*}
