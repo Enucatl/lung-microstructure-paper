@@ -1,7 +1,9 @@
 
 \subsection{Processing of the tomographic data}\label{sec:tomoprocessing}
-The tomographic sinograms are preprocessed with the Paganin algorithm and
-the 3D volume is then reconstructed with the gridrec algorithm. The volumes
+The tomographic sinograms are preprocessed with the Paganin
+algorithm~\cite{doi:10.1046/j.1365-2818.2002.01010.x} and
+the 3D volume is then reconstructed with the gridrec
+algorithm~\cite{Marone:pp5022}. The volumes
 are then thresholded with the Otsu algorithm, with independent thresholds
 for each slice, to provide a binary labelling for tissue and air. A cycle of
 erosion and dilation is applied to remove single pixel artifacts while still
@@ -26,7 +28,7 @@ sphere, resulting in a model where the lung airways are a collection of
 spheres embedded in the background of the tissue.
 
 To obtain a distribution of sphere sizes, kernel density estimation in the R
-statistics package by Duong is used in order to avoid possible artifacts
+statistics package \emph{ks}~\cite{JSSv021i07} is used in order to avoid possible artifacts
 resulting from the arbitrary binning of the histogram of sphere sizes.
 
 \subsection{Processing of the radiographic data}\label{sec:radioprocessing}
