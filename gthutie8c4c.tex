@@ -24,9 +24,13 @@ scattering from unresolved microscopic structures under different angles in
 a single shot by
 creating an array of circular interference patterns. The intensity of the
 dark-field signals for different angles can then be recovered for each
-pixel, and an asymmetry value defined as $\alpha =
-\frac{\max_\theta{B(\theta)} -
-\min_\theta{B(\theta)}}{\max_\theta{B(\theta)} + \min_\theta{B(\theta)}}$
+pixel, and an asymmetry value defined as
+\begin{equation}
+    \alpha =
+    \frac{\max_\theta{B(\theta)} -
+    \min_\theta{B(\theta)}}{\max_\theta{B(\theta)} + \min_\theta{B(\theta)}}
+    \label{eqn:asymmetry}
+\end{equation}
 can be calculated for each pixel. This allows us to exclude the possibility
 that there are significant inhomogeneities in the dark-field response of the
 lung structures under different angles, which would directly invalidate the
@@ -40,5 +44,5 @@ thickness of the samples (less than 4 mm), the absorption ranges from 4\% to
 6\%. The correction to dark-field values provided by [yashiro] is therefore
 not applied, as it is reported to be relevant for samples absorbing at least
 50\% of the incoming light. The beam hardening effect is considered insofar
-it affects the spectral weights of eq. \ref{eqn:totalsum}, which are calculated
+it affects the spectral weights of eq.~\ref{eqn:totalsum}, which are calculated
 after the sample.
