@@ -1,5 +1,7 @@
 introduction.tex
 methods.tex
+figures/lung-setup
+cg8baem8k2c.tex
 1qlutd802m.tex
 model.tex
 figures/summary
