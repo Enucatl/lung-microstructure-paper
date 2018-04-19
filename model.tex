@@ -51,6 +51,12 @@ sphere samples recorded on the laboratory source interferometer.
 
 [plot]
 
+A model of the sample is required to calculate the spectral weights
+$s(\energy)$ in order to avoid beam hardening artefacts. The source spectrum is
+simulated with the SpekCalc~\cite{spekcalc} software, then attenuated
+according to NIST absorption tables for the sample in the beam path and the
+efficiency of the detector.
+
 In this work, we propose to model the lung sample as a solution of
 polydisperse spherical air bubbles embedded in tissue. The distribution of
 the sphere diameters is extracted from the microtomographic data, together
@@ -65,6 +71,6 @@ The coefficient $\mu_B$ can then be expressed as a double summation over the spe
 $s(\energy)$ and over the distribution of sphere diameters $\rho(d)$:
 
 \begin{equation}
-    \mu_B = \sum_{d}\sum_{\energy}} \mu_B(r, E; n, f)\rho(d)s(\energy)
+    \mu_B = \sum_{d}\sum_{\energy} \mu_B(r, E; n, f)\rho(d)s(\energy)
     \label{eqn:totalsum}.
 \end{equation}
