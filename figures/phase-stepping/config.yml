@@ -1,6 +1,6 @@
 ---
 version: 2
-multicolumn: false
+multicolumn: true
 web-width: 500px
 align: center
 float: h!
@@ -17,3 +17,4 @@ grid:
     - 1
     - 1
     url: "/users/53595/articles/278308/master/file/figures/phase-stepping/phase-stepping.png"
+    folder_url: "/users/53595/articles/278308/master/folder/figures/phase-stepping"
