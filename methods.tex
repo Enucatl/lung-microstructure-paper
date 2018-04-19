@@ -1,4 +1,4 @@
-\section{Methods}
+\section{Methods}\label{sec:methods}
 \subsection{Sample preparation}
 Eight \emph{ex-vivo} mouse samples were prepared at the university of Bern.
 In order to preserve the delicate structure of the lungs, critical point
@@ -7,7 +7,7 @@ from the sample in ordinary pressure conditions.
 
 [ethical details? preparation steps?]
 
-\subsection{Image acquisition}
+\subsection{Image acquisition}\label{sec:acquisition}
 The microtomography high-resolution 3D images were acquired at the X02DA
 TOMCAT beamline of the Swiss Light Source at the Paul Scherrer Institute
 (Villigen, Switzerland). The X-ray beam is generated with a 2.9 T bending
@@ -30,7 +30,7 @@ efficiency at high energies (>90\% at 60 keV) with a pixel size of 75 x 75
 μm$^2$. The phase-stepping procedure was performed with 31 phase steps with
 1 s exposure per step.
 
-\subsection{Processing of the tomographic data}
+\subsection{Processing of the tomographic data}\label{sec:tomoprocessing}
 The tomographic sinograms are preprocessed with the Paganin algorithm and
 the 3D volume is then reconstructed with the gridrec algorithm. The volumes
 are then thresholded with the Otsu algorithm, with independent thresholds
@@ -60,7 +60,7 @@ To obtain a distribution of sphere sizes, kernel density estimation in the R
 statistics package by Duong is used in order to avoid possible artifacts
 resulting from the arbitrary binning of the histogram of sphere sizes.
 
-\subsection{Processing of the radiographic data}
+\subsection{Processing of the radiographic data}\label{sec:radioprocessing}
 Radiographic data in the Talbot-Lau interferometer are recorded with the
 following procedure. The interferometer is composed of three gratings,
 labelled $G_0$, $G_1$ and $G_2$. The first grating $G_0$ creates an array of
