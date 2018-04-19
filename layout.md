@@ -1,5 +1,7 @@
 introduction.tex
 methods.tex
+figures/phase-stepping
+1qlutd802m.tex
 model.tex
 figures/summary
 model2.tex
