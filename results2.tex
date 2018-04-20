@@ -17,27 +17,20 @@ Possible sources of inaccuracy of our model include a significantly
 different distribution of shapes in the lung parenchyma, or additional
 effects of beam hardening which are known to influence the dark-field
 signal. In order to consider the effects of possible shape asymmetries, a
-single mouse lung sample was scanned at the
-X02DA TOMCAT beamline
-with the setup described in Kagias et
-al.~\cite{PhysRevLett.116.093902}.
-This technique is similar to Talbot
-interferometry, but it is able to detect scattering from unresolved
-microscopic structures under different angles in a single shot by
+single mouse lung sample was scanned at the X02DA TOMCAT beamline with the
+setup described in Kagias et al.~\cite{PhysRevLett.116.093902}. This
+technique is similar to Talbot interferometry, but it is able to detect
+scattering from unresolved microscopic structures under different angles in
+a single shot by
 creating an array of circular interference patterns. The intensity of the
 dark-field signals for different angles can then be recovered for each
-pixel, and an asymmetry value defined as
-\begin{equation}
-    \alpha =
-    \frac{\max_\theta{B(\theta)} -
-    \min_\theta{B(\theta)}}{\max_\theta{B(\theta)} + \min_\theta{B(\theta)}}
-    \label{eqn:asymmetry}
-\end{equation}
-can be calculated for each pixel. This allows us to exclude the possibility
-that there are significant inhomogeneities in the dark-field response of the
-lung structures under different angles, which would directly invalidate the
-model of a superposition of spheres. The results are shown in figure [] and
-as a histogram [], demonstrating a limited asymmetry over the whole sample.
+pixel, and an asymmetry value defined as the amplitude of this periodic
+signal divided by the average can be calculated for each pixel. This allows
+us to exclude the possibility that there are significant inhomogeneities in
+the dark-field response of the lung structures under different angles, which
+would directly invalidate the model of a superposition of spheres. This
+amounts to quantifying the departure from a spherical model towards
+ellipsoids. In our sample this asymmetry is an average of $0.11 \pm 0.04$.
 
 Another effect commonly reported in dark-field analyses on wide, polychromatic
 sources is the influence of beam hardening on the recorded dark-field
