@@ -3,6 +3,7 @@ methods.tex
 figures/lung-setup
 methods2.tex
 methods3.tex
+figures/KO373_LL_smoke
 model.tex
 figures/summary
 model2.tex
