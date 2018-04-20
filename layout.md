@@ -3,6 +3,7 @@ methods.tex
 figures/lung-setup
 cg8baem8k2c.tex
 1qlutd802m.tex
+figures/KO373_LL_smoke
 model.tex
 figures/summary
 model2.tex
