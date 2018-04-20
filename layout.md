@@ -1,12 +1,12 @@
 introduction.tex
 methods.tex
 figures/lung-setup
-cg8baem8k2c.tex
-1qlutd802m.tex
+methods2.tex
+methods3.tex
 figures/KO373_LL_smoke
 model.tex
 figures/summary
 model2.tex
 results.tex
 figures/samples
-gthutie8c4c.tex
+results2.tex
