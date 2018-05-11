@@ -10,23 +10,7 @@ should be removed as they could affect the subsequent analysis.
 
 Next, each lung sample is manually stitched from three or four local
 tomographies, depending on the sample thickness, and the local air thickness
-map is calculated. The local thickness map is an algorithm developed for
-bone analysis or foam analysis in material science~\cite{6778077}, that aims
-at calculating the maximum diameter of a sphere fitting in each hole in the
-sample.
-
-The euclidean distance transform is calculated from the image, yielding the
-distance of each point in the airways from the closest wall. The points in
-the transformed dataset are then sorted in descending order in order to fit
-the largest possible sphere at each location.
-
-In the case of lungs, each of the airways is filled with the largest possible
-sphere, resulting in a model where the lung airways are a collection of
-spheres embedded in the background of the tissue.
-
-To obtain a distribution of sphere sizes, kernel density estimation in the R
-statistics package \emph{ks}~\cite{JSSv021i07} is used in order to avoid possible artifacts
-resulting from the arbitrary binning of the histogram of sphere sizes.
+map is calculated. Here 
 
 \subsection{Processing of the radiographic data}\label{sec:radioprocessing}
 Radiographic data in the Talbot-Lau interferometer are recorded with the
