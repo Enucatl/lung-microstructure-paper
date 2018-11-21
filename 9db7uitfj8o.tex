@@ -1,0 +1,36 @@
+
+To obtain a distribution of sphere sizes, kernel density estimation in the R
+statistics package \emph{ks}~\cite{Duong_2007} is used in order to avoid possible artifacts
+resulting from the arbitrary binning of the histogram of sphere sizes. 
+
+\subsection{Processing of the radiographic data}\label{sec:radioprocessing}
+Radiographic data in the Talbot-Lau interferometer are recorded with the
+following procedure. The interferometer is composed of three gratings,
+labelled $G_0$, $G_1$ and $G_2$. The first grating $G_0$ creates an array of
+individually coherent but mutually incoherent light sources from the
+focal spot of the X-ray tube. The second grating $G_1$ generates an
+interference pattern downstream by exploiting the self-imaging Talbot
+effect. This interference pattern has the same periodicity of the grating
+itself, 5.4 μm for the current experiment, and it is therefore too small to
+be resolved by the detector. A third grating $G_2$ with the same period is
+then moved in a direction perpendicular to the interference fringes over one
+period in order to sample the intensity of the pattern at several positions.
+This results in a so-called phase-stepping curve whose parameters change
+when a sample is present in the beam: the average intensity is reduced
+according to the absorption of the X-rays in the sample, while the reduction
+in the amplitude of the curve is determined by microstructures.
+
+A sinusoidal fit is performed with Fourier component analysis, where the
+reference curve for each pixel is:
+
+\begin{equation}
+    c_f(x) = a_{0,f} + a_{1,f} \sin(x + \theta_{f}),
+    \label{eqn:flat}
+\end{equation}
+
+the parameters are changed when a sample is in the beam:
+
+\begin{equation}
+    c_s(x) = a_{0,s} + a_{1,s} \sin(x + \theta_{s}).
+    \label{eqn:sample}
+\end{equation}
