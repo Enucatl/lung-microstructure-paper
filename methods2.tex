@@ -1,6 +1,18 @@
 
 \subsection{Processing of the tomographic data}\label{sec:tomoprocessing}
-
+The tomographic sinograms are preprocessed with the Paganin
+algorithm~\parencite{Paganin_2002} and
+the 3D volume is then reconstructed with the gridrec
+algorithm~\parencite{Marone:pp5022}. The volumes, shown in
+figure~\ref{fig:reconstructed} are then thresholded with the Otsu
+algorithm~\parencite{Otsu_1979}, with independent thresholds for each slice, to
+provide a binary labelling for tissue and air. A cycle of
+erosion and dilation is applied to remove single pixel artifacts while still
+keeping the septa between neighboring alveoli (figure~\ref{fig:segmented}).
+This preserves the structures in the lung because septa, while possibly
+being only one pixel in thickness, are also connected to surrounding tissue.
+On the other hand, isolated pixels should be removed as they could affect
+the subsequent analysis.  
 The reconstructed 3D volumes are then thresholded with the Otsu algorithm~\cite{Otsu_1979}, with independent thresholds
 for each slice, to provide a binary labelling for tissue and air. A cycle of
 erosion and dilation is applied to remove single pixel artifacts while still
