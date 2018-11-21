@@ -9,7 +9,13 @@ sample.
 The euclidean distance transform is calculated from the image, yielding the
 distance of each point in the airways from the closest
 wall.
+The points in the transformed dataset are then sorted in descending order in
+order to fit the largest possible sphere at each location.
 
+In the case of lungs, each of the airways is filled with the largest possible
+sphere, resulting in a model where the lung airways are a collection of
+spheres embedded in the background of the tissue
+(figure~\ref{fig:thickness-map}). 
 \subsection{Processing of the radiographic data}\label{sec:radioprocessing}
 Radiographic data in the Talbot-Lau interferometer are recorded with the
 following procedure. The interferometer is composed of three gratings,
