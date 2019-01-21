@@ -7,6 +7,8 @@ results.tex
 figures/samples
 results2.tex
 methods.tex
+figures/Screenshot_20190121_153540
+d3puq6u3hq.tex
 figures/lung-setup
 methods2.tex
 figures/reco
