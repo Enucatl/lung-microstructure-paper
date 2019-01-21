@@ -15,6 +15,8 @@ figures/reco
 10n1rcmbq8g.tex
 figures/thickmap
 9db7uitfj8o.tex
+figures/size_pdf
+qucrce4hfk.tex
 methods3.tex
 figures/KO373_LL_smoke
 8r7ess0l7p8.html
